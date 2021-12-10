@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/txtEmail"
+       android:text="Email :"
+       android:textSize="24dp"
+       />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/inputEmail"
+        android:hint="Enter Email"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtName"
+        android:text="Full Name :"
+        android:textSize="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/inputEmail"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/inputName"
+        android:hint="Enter Full Name"
+        app:layout_constraintTop_toBottomOf="@+id/txtName"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPassword"
+        android:text="Pass Word :"
+        android:textSize="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/inputName"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/inputPassword"
+        android:hint="Enter Full Name"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRegister"
+        app:layout_constraintTop_toBottomOf="@id/inputPassword"
+        android:text="Register"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
